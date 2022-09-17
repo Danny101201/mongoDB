@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mongodb": "^4.8.1",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "server": "nodemon demo.ts"
+  }
+}
