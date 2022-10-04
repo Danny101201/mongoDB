@@ -4,6 +4,20 @@
     "ts-node": "^10.9.1"
   },
   "scripts": {
-    "server": "nodemon demo.ts"
+    "server": "nodemon demo.ts",
+    "prepare": "husky install"
+  },
+   "lint-staged": {
+    "*.{ts,js,vue}": [
+      "eslint --fix"
+    ],
+    "*.{html,scss,css,vue}": [
+      "prettier --write",
+      "stylelint --fix"
+    ]
+ },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3"
   }
 }
